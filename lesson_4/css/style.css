@@ -1,0 +1,33 @@
+@import url("reset.css");
+
+body {
+	background-color: antiquewhite;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: red;
+	font-size: 24px;
+}
+.scandinavian-mythology li,
+.menu-items li{
+	font-size: 18px;
+	color: cadetblue;
+}
+
+
+span {
+	color: green;
+}
+img {
+	margin: 10px 10px;
+	width: 300px;	
+}
+
+.text__scandinavian-mythology p {
+	color: blueviolet;
+}
