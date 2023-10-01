@@ -1,0 +1,297 @@
+
+@import url("fonts.css");
+@import url("reset.css");
+
+body {
+	color: #7D7D7D;
+	font-family: "Inter";
+	font-size: 18px;
+}
+
+[class*="__container"] {
+	max-width: 1248px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+/* ============================== Licencing =============================================*/
+
+.page__licencing {
+	padding: 30px 0;
+}
+
+.licencing-page__title,
+.licencing-page__subtitle {
+	color: #37393F;
+	font-family: "Poppins";
+	font-weight: 700;
+	line-height: 1.21;
+}
+
+.licencing-page__head {
+	margin-bottom: 70px;
+	text-align: center;
+}
+.licencing-page__label {
+	color: #37393F;
+	font-weight: 500;
+	margin-bottom: 16px;
+}
+.licencing-page__label span {
+	display: inline-block;
+	margin-right: 6px;
+	width: 12px;
+	height: 12px;
+	background: #40DDB6;
+}
+.licencing-page__block-1,
+.licencing-page__block-2 {
+	margin-bottom: 100px;
+}
+.subtitle-licencing {
+	margin-bottom: 11px;
+}
+
+.licencing-page__title {
+	font-size: 60px;
+}
+.licencing-page__block-1 .licencing-page__text {
+	margin-bottom: 32px;
+}
+
+.licencing-page__block-2 h4 {
+	margin-bottom: 10px;
+}
+.licencing-page__subtitle {
+	font-size: 40px;
+}
+.licencing-page__text {
+	line-height: 1.46;
+}
+
+.licencing-page__text a {
+	color: #40DDB6;;
+}
+/* Оскільки не вчили ще нужні інструменти, я спробував окремий клас додати */
+.text-licencing {
+	margin-bottom: 24px;
+}
+.licencing-page__note h4{
+	color: #37393F;
+	font-family: "Poppins";
+	font-size: 30px;
+	font-weight: 700;
+}
+.licencing-page__note span {
+	color: #40DDB6;
+	font-weight: 400;
+}
+
+.text-licencing__light {
+	color: #40DDB6;;
+}
+
+/* ============================== Information ================================= */
+
+.page__information {
+	padding-bottom: 70px;
+}
+.information-page__container {
+	max-width: 860px;
+}
+.information-page__title {
+	color: #37393F;
+	font-family: "Poppins";
+	font-size: 40px;
+	font-weight: 700;
+	margin-bottom: 15px;
+	line-height: 1.27; 
+}
+.information-page__text {
+	line-height: 1.46;
+}
+.information-page__text p {
+	margin-bottom: 35px;
+}
+.information-page__items {
+	margin-bottom: 35px;
+}
+.information-page__item:not(:last-child) {
+	margin-bottom: 35px;
+}
+
+
+
+/* =========================== Euphoria  ====================================== */
+
+.block__euphoria {
+	padding-bottom: 70px;
+}
+.euphoria-block__container {
+	max-width: 1270px;
+}
+.euphoria-block__title {
+	color: #3C4242;
+	font-family: "Core Sans C";
+	font-size: 28px;
+	font-weight: 600;
+	line-height: 1.19;
+	letter-spacing: 0.56px;
+	margin-bottom: 30px;
+}
+
+.euphoria-block__title span {
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 15px;
+	width: 6px;
+	height: 28px;
+	border-radius: 10px;
+	background: #8A33FD;
+}
+
+.euphoria-block__section-1 {
+	margin-bottom: 25px;
+}
+.euphoria-block__subtitle {
+	color: #807D7E;
+	font-family: "Core Sans C";
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 1.67; /* 167.5% */
+	letter-spacing: 0.4px;
+	margin-bottom: 25px;
+}
+
+.euphoria-block__describtion {
+	color: #807D7E;
+	font-family: "Causten";
+	font-size: 20px;
+	line-height: 1.67; /* 167.5% */
+	letter-spacing: 0.4px;
+}
+
+.euphoria-block__describtion p:not(:last-child){
+	margin-bottom: 25px;
+}
+
+.euphoria-block__link {
+	display: inline-block;
+	color: #807D7E;
+	font-family: "Core Sans C";
+	font-size: 20px;
+	font-weight: 600;
+	letter-spacing: 0.4px;
+}
+
+.euphoria-block__section-2 {
+	margin-bottom: 20px;
+}
+
+/* ====================================== Jewellery ================================= */
+
+.page__jewellery {
+	padding: 60px 0;
+	font-family: "Cormorant Infant";
+}
+
+.jewellery-page__container {
+	max-width: 1133px;
+	font-size: 0;
+}
+.jewellery-page__content {
+	display: inline-block;
+	max-width: 503px;
+	padding: 70px 0;
+	margin-right: 75px;
+	font-weight: 700;
+	
+}
+.jewellery-page__label {
+	color: #D58417;	
+	font-size: 20px;
+	margin-bottom: 27px;
+	line-height: 1; /* 20px */
+}
+.jewellery-page__title {
+	color: #000;
+	font-size: 64px;
+	margin-bottom: 31px;
+	line-height: 1; /* 64px */
+}
+.jewellery-page__text {
+	color: #606060;
+	font-size: 30px;
+	line-height: 1.4; /* 42px */
+}
+
+.jewellery-page__items {
+	font-size: 0;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.jewellery-page__items img {
+	margin: 16px 0px 0px -14px;
+}
+.jewellery-page__wrapper-item {
+	display: inline-block;
+	vertical-align: middle;	
+	border: 1px solid #502203;
+	border-radius: 235px;
+}
+.first-image {
+	margin-right: 30px;
+	width: 177px;
+	height: 336px;
+}
+.second-image {
+	width: 307px;
+	height: 500px;
+}
+
+/* ============================== Practice ===============================*/
+
+.practice {
+	padding: 50px 0;
+	font-size: 0;
+}
+
+.practice img {
+	width: 250px;
+	border-radius: 50%;
+}
+.practice-title {
+	text-align: center;
+	font-size: 30px;
+	color: black;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	margin-bottom: 25px;
+	text-shadow: 2px 2px 5px #502203;
+}
+.practice-text {
+	font-size: 20px;
+
+	margin-bottom: 30px;
+}
+.practice-text span {
+	color: red;
+}
+
+.practice-text1 {
+	font-family: "Cormorant Infant";
+	width: 500px;
+	color: black;
+	background-color: #8A33FD;
+	font-size: 20px;
+	margin-left: 40px;
+	display: inline-block;
+}
+
+.practice-text1 p {
+	text-decoration: underline;
+	line-height: 1.46;
+	margin-bottom: 25px;
+}
