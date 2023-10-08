@@ -1,0 +1,377 @@
+
+@import url("fonts.css");
+@import url("reset.css");
+
+body {
+	color: #7D7D7D;
+	font-family: "Inter", sans-serif;
+	font-size: 18px;
+}
+
+[class*="__container"] {
+	max-width: 703px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.label {
+		
+}
+
+.title {
+	color: #37393F;
+	font-family: "Poppins", sans-serif;
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 1.21;
+}
+
+/* ============================== BG PRACRICE */
+
+.page__text{
+	background-image: url('../img/Butterfly.jpg');
+	background-repeat: no-repeat;
+	background-position: right top;
+	background-size: 500px;
+	background-attachment: fixed;
+}
+
+.page__text-1 {
+	background: url('../img/Butterfly.jpg')  20% / 50% fixed  no-repeat, linear-gradient(55.95deg, rgba(255, 64, 58, 0.3) 0%, rgba(247, 94, 5, 0.3) 100%), url('../img/Butterfly.jpg')  100% 100% / 20% fixed  no-repeat;
+}
+
+/* ============================== CONSULTING =============================================*/
+
+.consulting {
+	padding: 100px 0;
+}
+.consulting__container {
+}
+.consulting__content {
+	font-size: 0;
+	margin-bottom: 37px;
+}
+.consulting__label {
+	color: #37393F;
+	font-weight: 500;
+	font-size: 18px;
+	padding-left: 20px;
+
+	background: url('../img/Consulting/Box.svg') 0 2px no-repeat;
+
+	margin-bottom: 16px;
+}
+
+.consulting__title {	
+	max-width: 414px;
+	margin-bottom: 20px;
+}
+.consulting__text {
+	margin-bottom: 20px;
+	font-size: 18px;
+
+	line-height: 1.46;
+}
+.consulting__text p:not(:last-child) {
+	margin-bottom: 15px;
+}
+.consulting__items {
+	margin-bottom: 43px;	
+}
+.consulting__item {
+	color: #37393F;
+	font-family: "Poppins", sans-serif;
+	font-size: 20px;
+	line-height: 1.65;
+
+	padding-left: 35px;
+
+	min-height: 30px;
+
+	background: url('../img/Consulting/li.svg') 0 3px no-repeat;
+}
+
+.consulting__item:not(:last-child) {
+	margin-bottom: 23px;
+}
+
+.consulting__link {
+	display: inline-block;
+	background: #6B77E5;
+	padding: 22px 27px;
+
+	color: #FFF;
+	text-align: center;
+	font-weight: 600;
+	text-transform: capitalize;
+}
+
+.achievement__first {
+	padding: 32px;
+	margin-right: 20px;
+	font-size: 0;
+	display: inline-block;
+	border: 1px solid #E3E3E3;
+}
+.achievements__second {
+	padding: 32px;
+	font-size: 0;
+	display: inline-block;
+	border: 1px solid #E3E3E3;
+}
+
+.achievement__img {
+	margin-right: 20px;
+}
+.achievements__content {
+	max-width: 173px;
+	display: inline-block;
+}
+.achievements__title {
+	color: #37393F;
+	font-family: "Poppins", sans-serif;
+	font-size: 20px;
+	font-weight: 600;
+	margin-bottom: 10px;
+	
+}
+.achievements__text {
+	font-size: 16px;
+	line-height: 1.35;
+}
+
+/* ================================= PROJECTS ==================================== */
+
+.projects {
+}
+.projects__container {
+	max-width: 1250px;
+}
+.projects__head {
+	max-width:  852px;
+	margin: 0 auto;
+	margin-bottom: 47px;
+	text-align: center;
+}
+.projects__label {	
+	color: #37393F;
+	font-weight: 500;
+	margin-bottom: 15px;
+
+	padding-left: 15px;
+	min-height: 22px;
+
+	display: inline-block;
+	background: url('../img/Consulting/Box.svg') 0 3px / 12px 12px no-repeat;
+}
+
+.projects__title {
+	margin-bottom: 15px;
+}
+.projects__text {
+	align-items: center;
+	line-height: 1.46;
+}
+
+.projects__items {
+	font-size: 0;
+}
+
+.projects__block {
+	margin-bottom: 60px;
+}
+
+.image-project {
+	min-width: 384px;
+	min-height: 501px;
+	margin-bottom: 24px;
+}
+.projects__item {
+	display: inline-block;
+}
+
+.projects__image-1,
+.projects__image-2,
+.projects__image-4,
+.projects__image-5 {
+	margin-right: 34px;
+}
+
+.projects__image-1 {		
+	background: url('../img/projects/01.jpg') 0 0 no-repeat;	
+}
+
+.projects__image-2 {
+	background: url('../img/projects/02.jpg') 0 0 no-repeat;
+}
+.projects__image-3 {
+	background: url('../img/projects/03.jpg') 0 0 no-repeat;
+}
+
+.projects__image-4 {
+	background: url('../img/projects/04.jpg') 0 0 no-repeat;
+}
+
+.projects__image-5 {
+	background: url('../img/projects/05.jpg') 0 0 no-repeat;
+}
+
+.projects__image-6 {
+	background: url('../img/projects/06.jpg') 0 0 no-repeat;
+}
+
+.projects__content {
+}
+
+.projects__subtitle {
+	color: #37393F;
+	font-family: "Poppins";
+	font-size: 20px;
+	font-weight: 600;
+	margin-bottom: 10px;
+	line-height: 1.27; /* 25.4px */
+}
+.projects__data {
+	font-size: 14px;
+	line-height: 1.46;
+
+	min-height: 22px;
+
+	padding-left: 25px;
+	background: url('../img/projects/calendar.svg') 0 0 no-repeat;
+}
+
+/* =========================== Euphoria  ====================================== */
+
+.block__euphoria {
+	padding-bottom: 70px;
+}
+.euphoria-block__container {
+	max-width: 1270px;
+}
+.euphoria-block__title {
+	color: #3C4242;
+	font-family: "Core Sans C";
+	font-size: 28px;
+	font-weight: 700;
+	line-height: 1.19;
+	letter-spacing: 0.56px;
+	margin-bottom: 30px;
+
+	padding-left: 20px;
+
+	background: url('../img/Euphoria/Line.svg') 0 3px no-repeat;
+}
+
+/*.euphoria-block__title span {
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 15px;
+	width: 6px;
+	height: 28px;
+	border-radius: 10px;
+	background: #8A33FD;
+}*/
+
+.euphoria-block__section-1 {
+	margin-bottom: 25px;
+}
+.euphoria-block__subtitle {
+	color: #807D7E;
+	font-family: "Core Sans C";
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 1.67; /* 167.5% */
+	letter-spacing: 0.4px;
+	margin-bottom: 25px;
+}
+
+.euphoria-block__describtion {
+	color: #807D7E;
+	font-family: "Causten";
+	font-size: 20px;
+	line-height: 1.67; /* 167.5% */
+	letter-spacing: 0.4px;
+}
+
+.euphoria-block__describtion p:not(:last-child){
+	margin-bottom: 25px;
+}
+
+.euphoria-block__link {
+	display: inline-block;
+	color: #807D7E;
+	font-family: "Core Sans C";
+	font-size: 20px;
+	font-weight: 700;
+	letter-spacing: 0.4px;
+}
+
+.euphoria-block__section-2 {
+	margin-bottom: 20px;
+}
+
+.euphoria__main {
+	padding-bottom: 70px;
+}
+
+.euphoria__container {
+	max-width: 1270px;	
+}
+
+.euphoria__body {
+	overflow: hidden;
+	border-radius: 10px;
+	font-size: 0;
+}
+
+.euphoria__left,
+.euphoria__right {	
+	display: inline-block;
+	min-height: 640px;
+}
+
+.euphoria__left {
+	padding: 183px 74px 175px;
+	max-width: 614px;
+	background: url('../img/Euphoria/bg1.jpg') center / cover no-repeat;
+}
+.euphoria__right {
+	vertical-align: top;
+	max-width: 626px;
+	width: 100%;
+	background: url('../img/Euphoria/bg2.jpg') center / cover no-repeat;
+}
+.euphoria__content {
+}
+.euphoria__title {
+	color: #FFF;
+	font-family: "Core Sans C";
+	font-size: 34px;
+	font-weight: 700;
+	line-height: 1.47; /* 147.059% */
+	letter-spacing: 0.2px;
+
+	margin-bottom: 30px;
+}
+.euphoria__text {
+	color: #FFF;
+	font-family: "Causten";
+	font-size: 20px;
+	font-weight: 300;
+	letter-spacing: 1px;
+
+	margin-bottom: 50px;
+}
+.euphoria__link {
+	display: inline-block;
+
+	color: #3C4242;
+	font-family: "Causten";
+	font-size: 18px;
+	font-weight: 600;
+	padding: 12px 44px;
+
+	border-radius: 8px;
+	background: #FFF;
+}
