@@ -1,0 +1,220 @@
+
+@import url("fonts.css");
+@import url("reset.css");
+
+body {
+	color: #7D7D7D;
+	font-family: "Inter", sans-serif;
+	font-size: 18px;
+}
+
+[class*="__container"] {
+	max-width: 703px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.page__title {
+	text-align: center;
+	font-weight: 700;
+	font-size: 40px;
+	font-family: "Poppins";
+	margin: 20px 0;
+}
+
+.page__title:hover{
+	text-decoration: underline;
+}
+
+.page__text {
+	margin: 20px;
+	padding: 20px;
+	background-color: burlywood;
+	color: black;
+	line-height: 1.21;
+}
+
+.page__text:nth-child(even) {
+	background: url('../img/practice.jpeg') 0 0 no-repeat;
+	color: white;
+}
+.page__text:nth-child(odd) {
+	background-color: black;
+	color: azure;
+}
+.page__text:nth-child(4){
+	text-transform: uppercase;
+}
+
+.page__wrapper {
+	text-align: center;
+}
+
+.page__link {
+	margin-bottom: 20px;
+	padding: 10px 16px;
+	color: aliceblue;
+	border-radius: 10px;
+	background-color: cadetblue;
+}
+
+.page__link:hover{
+	outline: 3px solid green;
+}
+
+.page__link:active {
+	background-color: rgb(82, 102, 103);
+	outline: 3px solid blue;
+}
+.block {
+	margin-bottom: 15px;
+}
+.block p{	
+	font-weight: 600;
+	margin-bottom: 30px;
+}
+.block__item,
+.block__item-1,
+.block__item-2 {
+	text-align: center;
+	margin-bottom: 30px;
+}
+.block__item a,
+.block__item-1 a,
+.block__item-2 a{
+	color: white;
+	padding: 20px;
+	border-radius: 10px;
+	background-color: darkblue;
+	cursor: pointer;
+}
+
+.block__item a:hover {
+	opacity: 0;
+}
+
+.block__item-1 a:hover{
+	visibility: hidden;
+}
+
+.block__item-2 span {
+	display: none;
+}
+
+.block__item-2 a:hover span {
+	display: inline-block;
+}
+
+.line__block {
+	width: 100px;
+	height: 100px;
+	margin-bottom: 20px;
+	background-color: blueviolet;
+}
+
+.line__block p {
+	text-align: center;
+	color: white;
+	padding-top: 40px;
+	font-size: 20px;
+	font-weight: 600;
+	visibility: hidden;
+}
+
+.line__block:hover {
+	width: 100%;
+}
+
+.line__block:hover p{
+	visibility: visible;
+}
+
+/* =========================== GAME =================================== */
+
+.game {
+	min-height: 650px;
+	text-align: initial;
+	margin-top: 30px;
+	max-width: 900px;
+	margin: 0 auto;
+	font-size: 0;
+}
+
+.game__line {
+	background-color: cadetblue;
+}
+
+.game__line-1 {
+	width: 120px;
+	height: 160px;
+}
+.game__line-2 {
+	visibility: hidden;
+	width: 20px;
+	height: 60px;
+}
+
+.game__line-1:hover + .game__line-2,
+.game__line-2:hover {
+	visibility: visible;
+}
+.game__line-3 {
+	visibility: hidden;
+	height: 17px;
+}
+.game__line-2:hover + .game__line-3,
+.game__line-3:hover{
+	width: 92.8%;
+	visibility: visible;
+}
+.game__line-3 {
+	width: 92.8%;
+	height: 20px;
+	display: inline-block;
+}
+.game__line-3-1 {
+visibility: hidden;
+	margin: 0 90%;
+	width: 20px;
+	height: 70px;
+}
+
+.game__line-3:hover ~ .game__line-3-1,
+.game__line-3-1:hover {
+	/*display: inline-block;*/
+	visibility: visible;
+}
+
+.game__line-4 {
+	display: inline-block;
+	visibility: hidden;
+	width: 92.8%;
+	height: 20px;
+}
+
+.game__line-4-1 {
+	width: 30px;
+	height: 20px;
+}
+
+.game__line-3-1:hover ~ .game__line-4,
+.game__line-4-1:hover {
+	visibility: visible;
+}
+
+.game__line-5 {
+	width: 30px;
+	height: 60px;
+}
+
+.game__line-6 {
+	background-color: red;
+	width: 60px;
+	height: 60px;
+}
+
+/*.game__line-3-1:hover ~ .game__line-4,
+.game__line-4-1:hover {
+	visibility: visible;
+}*/
+
