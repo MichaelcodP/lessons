@@ -1,0 +1,10 @@
+
+@import url("fonts.css");
+@import url("reset.css");
+
+body {
+	color: #292727;
+	font-family: "Inter", sans-serif;
+	font-size: 24px;
+	background-color: bisque;
+}
