@@ -1,0 +1,185 @@
+@import url("style.css");
+.header {
+	border-bottom: 1px solid rgba(131, 131, 131, 0.21);
+}
+.menu__item--active .menu__link{
+	color: black;
+	font-weight: 700;
+	text-decoration-line: underline;
+}
+
+.actions-header__link {
+	flex-shrink: 0;
+}
+
+.actions-header__link {
+	padding: 12px 26px;
+	border-radius: 5px;
+	background: #0E333D;
+
+	color: #FFF;
+	transition: all 0.3s;
+	/* Button/bold */
+	font-family: "Merriweather";
+	font-size: 20px;
+	font-weight: 700
+}
+.actions-header:hover .actions-header__link{
+	background: #a7a4a4;
+	color: #0E333D;
+}
+
+/* ========================= jewerly ============================ */
+
+.page {
+}
+.page__jewerly {
+	font-family: "DM Serif Text", sans-serif;
+}
+.jewerly {
+	padding: 200px 0 55px 0;
+	background: #FFF9F4;
+}
+.jewerly__container {
+	max-width: 1230px;
+}
+.jewerly__body {
+	display: flex;
+	column-gap: 86px;
+	row-gap: 25px;
+}
+.jewerly__content {
+	flex: 0 0 577px;
+}
+.jewerly__title {
+	color: #0E333D;
+	font-size: 78px;
+	font-weight: 400;
+	line-height: 127%; /* 99.06px */
+}
+.jewerly__title:not(:last-child) {
+	margin-bottom: 32px;
+}
+.jewerly__text p{
+	color: #727272;
+	font-family: "Inter";
+	font-size: 22px;
+	line-height: 148%; /* 32.56px */
+}
+.jewerly__text:not(:last-child) {
+	margin-bottom: 48px;
+}
+.jewerly__actions {
+}
+.actions-jewerly {
+	display: flex;
+	align-items: center;
+	column-gap: 47px;
+	row-gap: 15px;
+}
+.actions-jewerly__shop-button {
+
+	padding: 10px 44px;
+	border-radius: 5px;
+	background: #0E333D;
+	color: #FFF;
+	transition: all 0.3s;
+	font-size: 28px;
+}
+.actions-jewerly__video-button {
+	color: #0E333D;
+	font-size: 28px;
+	transition: transform 0.3s;
+	text-decoration-line: underline;
+}
+
+@media (any-hover: hover) {
+	.actions-jewerly__shop-button:hover {
+		background: #a7a4a4;
+		color: #0E333D;
+	}
+	.actions-jewerly__video-button:hover {
+		transform: scale(1.1);
+	}
+}
+.jewerly__items {
+	display: flex;
+	flex-wrap: wrap;
+	column-gap: 32px;
+	row-gap: 15px;
+	min-height: 536px
+}
+.jewerly__item:nth-child(even) {
+	align-self: flex-start;
+}
+.jewerly__item:nth-child(odd) {
+	align-self: flex-end;
+}
+.jewerly__item img{
+	width: 100%;
+	height: 100%;
+	aspect-ratio: 245 / 467;
+	object-fit: cover;
+}
+@media (max-width: 960px) {
+	.jewerly {
+		padding: 100px 0 55px 0;
+	}
+
+	.jewerly__body {
+		flex-direction: column;
+		text-align: center;
+	}
+	.actions-jewerly {
+		justify-content: center;
+	}	
+	.jewerly__content {
+		flex: 1 1 auto;
+	}
+	.jewerly__items {
+		justify-content: center;
+	}
+
+	.jewerly__text:not(:last-child) {
+		margin-bottom: 28px;
+	}
+	
+}
+@media (max-width: 906px) {
+	.jewerly__title {
+		font-size: 49px;
+	}
+}
+@media (max-width: 681px) {
+	.jewerly__title {
+		font-size: 38px;		
+	}
+	.jewerly__text p{
+		font-size: 18px;
+	}
+	.actions-jewerly__shop-button{
+		padding: 10px 24px;
+		font-size: 24px;
+	}
+	.actions-jewerly__video-button {
+		font-size: 24px;
+	}
+}
+@media (max-width: 441px) {
+	.actions-header__link {
+		padding: 10px 20px;
+	}
+}
+@media (max-width: 417px) {
+	.jewerly__items {
+		min-height: 387px;
+	}
+	.actions-jewerly {
+		flex-wrap: wrap;
+		row-gap: 15px;
+	}
+	.actions-jewerly__shop-button,
+	.actions-jewerly__video-button {
+		flex-shrink: 0;		
+	}
+}
