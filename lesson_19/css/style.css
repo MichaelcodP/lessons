@@ -1,0 +1,477 @@
+
+@import url("fonts.css");
+@import url("reset.css");
+
+
+body {
+	font-family: "Core Sans C;", sans-serif;
+	font-size: 18px;
+}
+
+[class*=__container] {
+	max-width: 1270px;
+	margin: 0 auto;
+	padding: 0 15px; 
+}
+
+.wrapper {
+	overflow: clip;
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.wrapper > main {
+	flex-grow: 1;
+}
+
+/* -------------------------- PAGE ------------------------------ */
+
+.page {
+	padding-top: 30px;
+}
+.page__container {
+}
+.page__discount:not(:last-child) {
+	margin-bottom: 30px;
+}
+.discount-page {
+	display: grid;
+	column-gap: 30px;
+	row-gap: 15px;
+	grid-template-columns: repeat(auto-fit,minmax(250px,1fr));;
+}
+.discount-page__item {
+	color: #FFF;
+	position: relative;	
+	
+	/*padding: 67px 250px 80px 28px;*/
+}
+.discount-page__image {
+}
+.discount-page__image img {
+	width: 100%;
+	height: 100%;
+	aspect-ratio: 604 / 356;
+	object-fit: cover;
+	border-radius: 12px;
+   box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.40);
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.discount-page__body {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	max-width: 340px;
+	flex: 0 1 340px;
+	padding: 57px 0px 55px 30px;
+}
+.discount-page__label {
+	font-family: "Montserrat";
+	font-weight: 800;
+	line-height: 1.67; /* 167.038% */
+	letter-spacing: 0.251px;
+}
+.discount-page__label:not(:last-child) {
+	margin-bottom: 25px;
+}
+.discount-page__title {
+	font-size: 34px;
+	font-weight: 800;
+	line-height: 1.32; /* 132.648% */
+}
+.discount-page__title:not(:last-child) {
+	margin-bottom: 9px;
+}
+.discount-page__text p{
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 1.56; /* 156.598% */
+	letter-spacing: 0.251px;
+}
+.discount-page__text:not(:last-child) {
+	margin-bottom: 42px;
+}
+.discount-page__link {
+	font-size: 20px;
+	font-weight: 800;
+	line-height: 1.50; /* 150.66% */
+}
+.discount-page__link:not(:last-child) {
+	margin-bottom: 15px;
+}
+.discount-page__link:hover {
+	text-decoration: underline;
+}
+
+/* ------------------ ARRIVAL ----------------------------*/
+
+.page__arrival {
+}
+.arrival-page {
+}
+.arrival-page:not(:last-child) {
+	margin-bottom: 95px;
+}
+.arrival-page__title {
+	color: #3C4242;
+	display: inline-flex;
+	gap: 20px;
+	font-family: "Core Sans C";
+	font-size: 34px;
+	font-weight: 600;
+	line-height: 98.529%; /* 98.529% */
+	letter-spacing: 0.68px;
+}
+.arrival-page__title::before {
+	content: '';
+	border-radius: 10px;
+	background: #8A33FD;
+	flex: 0 0 6px;
+	width: 6px;
+	height: 30px;
+	margin-top: 1px;
+}
+.arrival-page__title:not(:last-child) {
+	margin-bottom: 70px;
+}
+.arrival-page__items {
+	display: grid;
+	column-gap: 38px;
+	row-gap: 15px;
+	grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+}
+
+.arrival-page__item {
+	
+}
+.arrival-page__block {
+	transition: transform 0.3s;
+}
+.arrival-page__block:not(:last-child) {
+	margin-bottom: 32px;
+}
+.arrival-page__image {
+	display: block;
+	width: 100%;
+	height: 100%;
+	aspect-ratio: 262 / 262;
+	object-fit: cover;
+}
+.arrival-page__label {
+	display: block;
+	color: #3C4242;
+	font-family: "Causten";
+	font-size: 20px;
+	font-weight: 700;
+	letter-spacing: 0.2px;
+}
+
+.arrival-page__item:hover .arrival-page__block {
+	transform: scale(1.1);
+}
+
+/* --------------------- Offers ---------------------------- */
+
+.page__offers {
+}
+.offers-page {
+}
+.offers-page__items {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	gap: 20px;
+	grid-auto-rows: 1fr;
+}
+.offers-page__item {
+	position: relative;
+	grid-column: span 6; /* Для мобілок */
+	display: grid;
+	align-items: center;
+	border-radius: 12px;
+	overflow: hidden;
+	color: #3c4242;
+}
+
+@media (min-width: 650px) {
+	.offers-page__item {
+	  grid-column: span 3; /*розмір колонки на ширині в'юпорту більше за 725px*/
+	  padding: 36px 20px; /*задаєм падінги для картки на ширині в'юпорту більше за 725px*/
+	}
+	.offers-page__item.offers-page__item--big {
+	  grid-column: span 3; /*item на три клітинки на ширині в'юпорту більше за 725px*/
+	  padding-top: 45px;
+	  padding-bottom: 45px;
+	}
+ }
+ @media (min-width: 1100px) {
+	.offers-page__item {
+		grid-column: span 2; /*за замовчуванням усі item на дві клітинки*/
+	}
+	.offers-page__item--big {
+		padding-right: 15.74%; /*відсотковий падінг зправа вирахувано: розмір падінгу поділено на ширину картки (15.737705%; /* 96/610 та заокруглено */
+	}
+}
+@media (any-hover: hover) {
+	.offers-page__item:hover img {
+	  transform: scale(1.08);
+	}
+ }
+@media (max-width: 725px) {
+	.offers-page__item {
+		padding: 36px 20px;
+	}
+}
+
+
+ /* --------------------------------------------------------------------------------- */
+ .offers-page__item--left-content .offers-page__body {
+	justify-self: start;
+}
+.offers-page__item--text-right .offers-page__body {
+	text-align: right;
+}
+.offers-page__item--text-right .offers-page__icon {
+	margin-right: 46px; /*коли в блоку текст притиснутий вправо зміщуєм кнопку марджином*/
+ }
+.offers-page__item--white {
+	color: #Fff;
+}
+.offers-page__item--big .offers-page__title{
+	font-size: 32px;
+}
+/*додавання підкладки під текстовий блок для кращої видимості тексту*/
+@media (max-width: 768.98px) {
+	.offers-page__item .offers-page__body::before {
+	  background-color: rgba(255, 255, 255, 0.4);
+	}
+	.offers-page__item--white .offers-page__body::before {
+	  background-color: rgba(0, 0, 0, 0.2);
+	}
+ }
+ /* --------------------------------------------------------------------------------- */
+
+.offers-page__image {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+.offers-page__image img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: 40% 5%;
+	aspect-ratio: 400 / 400;
+	transition: transform 0.4s;
+	transform: scale(1.0001);
+}
+
+/* --------------------------------------------------------------------------------- */
+
+
+.offers-page__body {
+	position: relative;
+	max-width: 160px;
+	z-index: 2;
+	justify-self: end;
+}
+.offers-page__body::before {
+	content: "";
+	position: absolute;
+	width: 120%;
+	height: 120%;
+	top: -10%;
+	left: -10%;
+	filter: blur(12px); /*фільтер який робить фон розпливчастим без чітких контурів*/
+	z-index: -1; /*вказано -1 щоб елемент був під текстом*/
+	border-radius: 20px;
+}
+
+/* --------------------------------------------------------------------------------- */
+
+.offers-page__title {
+	font-size: 28px;
+	font-weight: 600;
+	line-height: 1.37; /* 137.255% */
+	letter-spacing: 0.56px;
+	display: inline-block;
+}
+.offers-page__title:not(:last-child) {
+	margin-bottom: 10px;
+}
+@media (any-hover: hover) {
+	.offers-page__title:hover {
+	  text-decoration: underline;
+	}
+ }
+
+/* --------------------------------------------------------------------------------- */
+
+.offers-page__label {
+	font-family: "Causten";
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 1.3;
+}
+.offers-page__label:not(:last-child) {
+	margin-bottom: 10px;
+}
+.offers-page__discount {
+	font-weight: 700;
+	line-height: 1.3;
+	text-transform: uppercase;
+}
+/* --------------------------------------------------------------------------------- */
+.offers-page__button {
+	border-radius: 4px;
+	border: 2px solid #3c4242;
+	display: inline-block;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: 500;
+	line-height: 1.3;
+	padding: 10px 24px;
+	transition: all 0.4s;
+}
+.offers-page__button:not(:first-child) {
+	margin-top: 80px;
+  }
+@media (min-width: 768.98px) {
+	.offers-page__button:not(:first-child) {
+		 margin-top: 80px;
+		}
+}
+
+/* --------------------------------------------------------------------------------- */
+.offers-page__button--arrow {
+	position: relative;
+}
+.offers-page__button--arrow::before {
+	content: '';
+	position: absolute;
+    top: -53px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 20px;
+    height: 23px;
+    background: url('../img/icons/arrow.svg') 50% / cover no-repeat;
+    animation: shake 2.2s ease-in-out infinite;
+    /* filter: drop-shadow(-15px 8px 2px #000); */
+    pointer-events: none;
+}
+@keyframes shake {
+	0% {
+	  transform: translate(-50%, 15px);
+	}
+	80% {
+	  transform: translate(-50%, 0px);
+	}
+	100% {
+	  transform: translate(-50%, 15px);
+	}
+ }
+ /* --------------------------------------------------------------------------------- */
+
+.offers-page__button--bg-color {
+	background: #3c4242;
+	border: 1px solid #3c4242;
+	color: #fff;
+	padding: 8px 12px;
+
+	color: #FFF;
+	font-family: "Causten";
+	font-size: 12px;
+	font-weight: 700;
+}
+.offers-page__button--white {
+	border: 1px solid #fff;
+}
+.offers-page__button--bg-color:not(:last-child) {
+	/*відступ вниз у верхньої кнопки в другій картці*/
+	margin-bottom: 10px;
+ }
+ @media (min-width: 768.98px) {
+	.offers-page__button--bg-color:not(:last-child) {
+		margin-bottom: 28px;
+  }
+}
+/* порядок написання стилів для hover має значення, спочатку пишуться стилі для усіх кнопок а потім стилі для модифікатору
+  якщо написати навпаки навпаки то стилі модифікатору для hover не будуть працювати */
+@media (any-hover: hover) {
+	.offers-page__button:hover {
+	  /*основні стилі для кнопки при hover*/
+	  background: #3c4242;
+	  color: #fff;
+	}
+	.offers-page__button--bg-color:hover {
+	  /*стилі для модифікованої кнопки при hover*/
+	  background: #fff;
+	  border: 1px solid #3c4242;
+	  color: #3c4242;
+	}
+ }
+
+
+
+
+
+
+/* ------------------- MEDIA --------------------------------- */
+
+@media (max-width: 1012px) {
+	.discount-page__title {
+		font-size: 28px;
+	}
+}
+@media (max-width: 995px) {
+	.discount-page__title {
+		font-size: 24px;
+	}
+}
+@media (max-width: 983px) {
+	.arrival-page__items {
+		column-gap: 28px;
+	}
+}
+@media (max-width: 860px) {
+	.discount-page__image{
+		background-color: rgba(60, 66, 66, 0.5);		
+	}
+}
+@media (max-width: 768px) {
+	.page {
+		padding-top: 10px;
+  }
+/*  .arrival-page__items {	
+		justify-content: center;
+	}*/
+	.arrival-page__item {
+		text-align: center;	
+		justify-self: center;
+	}
+}
+@media (max-width: 478px) {
+	.arrival-page__label {
+		display: block;
+  }
+  .arrival-page__item {
+	justify-self: center;
+  }
+}
+@media (max-width: 260px) {
+	.arrival-page__title {
+		font-size: 26px;
+	}
+	.arrival-page__title::before {
+		content: '';
+		height: 26px;
+	}
+}
+
+
+
