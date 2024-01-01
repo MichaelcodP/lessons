@@ -1,0 +1,165 @@
+
+@import url("fonts.css");
+@import url("reset.css");
+
+body {
+	color: #292727;
+	font-family: "Inter", sans-serif;
+	font-size: 18px;
+	background-color: bisque;
+}
+
+[class*=__container] {
+	max-width: 1250px;
+	margin: 0 auto;
+	padding: 0 15px; 
+}
+
+.wrapper {
+	overflow: clip;
+	min-height: 100%
+}
+
+/* -------------------------- HEADER ------------------------------ */
+
+.header {
+	text-align: center;
+	padding: 15px;
+	background-color: brown;
+}
+.header--fix {
+	position: sticky;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: 50;
+}
+.header__container {
+}
+.header__menu {
+}
+.header__item {
+	padding: 15px;
+	background-color: crimson;
+}
+.header__link {
+	color: #fff;
+	text-transform: uppercase;
+}
+.header__link:hover {
+	color:rgb(22, 52, 52)
+}
+
+
+/* -------------------------- MAIN ------------------------------ */
+
+.page {
+	padding: 30px 0;
+	font-size: 0;
+}
+
+.circle-bg {
+	padding: 15px;
+	background-color: #d338aa;
+}
+
+.circle-text {
+	text-align: center;
+	color: #292727;
+	margin-bottom: 15px;
+
+}
+
+.circle-text p {
+	font-size: 18px;
+}
+
+.circle-bg:not(:last-child) {
+	margin-bottom: 25px;
+}
+
+.circle {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	position: relative;
+	background-color: #73535e;
+
+	animation-name: circle;
+}
+
+.circle-1 {	
+	animation-duration: 3s;
+	animation-timing-function: cubic-bezier(0.68,-0.55,0.265,1.55);
+	animation-iteration-count: infinite;
+	animation-direction: alternate-reverse;
+}
+
+.circle-2 {
+	animation-duration: 3s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+}
+
+.circle-3 {
+	animation-duration: 3s;
+	animation-timing-function: ease-in;
+	animation-iteration-count: infinite;
+	animation-direction: reverse;
+}
+
+.circle-4 {
+	animation-duration: 4s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+.circle-5 {
+	animation-duration: 4s;
+	animation-timing-function: ease-out;
+	animation-iteration-count: infinite;
+	animation-direction: alternate-reverse;
+}
+
+.circle-5:hover{
+	animation-play-state: paused;
+	}
+
+	.circle-6 {
+		animation-duration: 3s;
+		animation-timing-function: linear;
+		animation-iteration-count: infinite;
+		animation-direction: alternate-reverse;
+		animation-delay: 1s;
+	}
+	.circle-7 {
+		animation-duration: 3s;
+		animation-timing-function: linear;
+		animation-iteration-count: infinite;
+		animation-direction: alternate;
+		animation-delay: 3s;
+		Animation-fill-mode: forwards;
+	}
+
+@keyframes circle {
+	0% {
+		left: 0%;
+	}
+	50% {
+		border-radius: 30%;
+	}
+	100% {
+		left: 100%
+	}
+}
+
+
+
+
+
+
+
+
+
+
