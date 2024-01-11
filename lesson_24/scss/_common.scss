@@ -1,0 +1,76 @@
+.btn {
+    color: white;
+    font-family: 'Inter';
+    font-weight: 600;
+    text-transform: capitalize;
+    @include adaptiveValue("padding-top", 20, 13);
+    @include adaptiveValue("padding-left", 35, 18);
+    @include adaptiveValue("padding-bottom", 20, 13);
+    @include adaptiveValue("padding-right", 35, 18);
+    background-color: $bgColor;
+    letter-spacing: toRem(1);
+    transition: background-color 0.3s ease;
+        @media (any-hover: hover){
+            &:hover{
+                background-color: #0c626d;
+            }
+        }
+}
+.btn-touch {
+    color: $secondColor;
+    font-weight: 600;
+    text-transform: capitalize;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+    @media (any-hover: hover){
+        &:hover{
+            color: $bgColor;
+        }
+    }
+}
+
+.header-block {
+    // .header-block__label
+    &__label {
+        color: $secondColor;
+        font-weight: 500;
+        line-height: 1.4;
+        font-style: normal;
+        display: flex;
+        gap: toRem(7);
+        text-transform: capitalize;
+        &::before {
+            content: '';
+            width: toRem(11);
+            height: toRem(11);
+            flex: 0 0 toRem(11);
+            background-color: $bgSecondColor;
+            margin-top: toRem(5);
+        }   
+        &:not(:last-child) {
+            @include adaptiveValue("margin-bottom", 15, 10);
+        }
+    }
+    // .header-block__title
+    &__title {
+        @include adaptiveValue("font-size", 40, 28);
+        font-family: "Poppins";
+        font-weight: 700;
+        line-height: 1.2;
+        color: $secondColor;
+        text-transform: capitalize;
+    }
+    // .header-block__text
+    &__text p {
+        line-height: 1.25;
+        &:not(:last-child) {
+            margin-bottom: toRem(8);
+        }
+    }
+    // .header-block__inner
+    &__inner {
+    }
+    // .header-block__link
+    &__link {
+    }
+}
